@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: #252A34
+    background-color: #000000;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -36,12 +36,11 @@ body{
     grid-column-end: 3;
 }
 
-.turn-container .turn-box {
-    border: 3px solid #000; /* Viền đen của khung lượt chơi */
+.turn-container .turn-box{
+    border: 3px solid #000;
     font-size: 1.6rem;
     font-weight: 700;
 }
-
 
 .turn-container .turn-box:nth-child(even){
     border-right: none;
@@ -57,29 +56,15 @@ body{
     z-index: -1;
 }
 
-
-
-.main-grid {
+.main-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 250px;
     width: 250px;
     margin: 30px auto;
+    border: 2px solid linear-gradient(to right, blue, purple); /* Đổ màu từ xanh dương qua tím */
 }
-.box {
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: 700;
-    border: 5px solid transparent; /* Viền trong suốt để áp dụng gradient */
-    border-image: linear-gradient(to right, blue, purple) 1; /* Đổ màu gradient cho viền của từng ô */
-}
-.box:hover {
-    background-color: #FF2E63;
-}
-
-
-
 
 .box{
     cursor: pointer;
