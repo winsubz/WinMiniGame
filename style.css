@@ -56,15 +56,17 @@ body{
     z-index: -1;
 }
 
-.main-grid{
+.main-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 250px;
     width: 250px;
     margin: 30px auto;
-    border: 2px solid linear-gradient(to right, blue, purple); /* Đổ màu từ xanh dương qua tím */
+    border: 10px solid transparent; /* Viền trong suốt để áp dụng gradient */
+    border-image: linear-gradient(to right, blue, purple, red) 1; /* Gradient từ xanh dương sang tím và đỏ */
 }
+
 
 .box{
     cursor: pointer;
