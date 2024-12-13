@@ -92,3 +92,62 @@ body{
     background-color: #08D9D6;
     color: #000;
 }
+
+footer span {   
+            color: #808080; /* Màu chữ trong footer */
+            font-size: 14px; /* Cỡ chữ của phần "© WinRate Được Tạo Ra bởi :" */
+}
+
+        footer a {                                  
+            color: #fff; /* Màu chữ của liên kết trong footer */
+            font-size: 14px; /* Cỡ chữ của phần "LVT ( WinWin )" */
+            font-weight: bold; /* Đậm chữ liên kết */
+            text-decoration: none; /* Không gạch chân */
+            transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà khi di chuột */
+}
+
+        footer a:hover {
+            color: #800080; /* Màu chữ khi di chuột lên liên kết */
+}
+        /* Tooltip */
+        .tooltip {
+            position: relative;  /* Định vị tooltip */
+            display: inline-block;  /* Hiển thị icon */
+            cursor: pointer;  /* Con trỏ thay đổi khi hover */
+}
+        /* Định dạng tooltip khi ẩn */
+        .tooltip .tooltiptext {
+            visibility: hidden;  /* Ẩn tooltip mặc định */
+            width: 220px;  /* Độ rộng của tooltip */
+            background-color: #333;  /* Màu nền của tooltip */
+            color: #fff;  /* Màu chữ trong tooltip */
+            text-align: center;  /* Căn giữa nội dung tooltip */
+            border-radius: 5px;  /* Bo góc tooltip */
+            padding: 10px;  /* Khoảng cách xung quanh nội dung tooltip */
+            position: absolute;  /* Định vị tuyệt đối tooltip */
+            z-index: 1;  /* Đảm bảo tooltip hiển thị trên các phần tử khác */
+            bottom: 125%;  /* Đặt tooltip lên trên icon */
+            left: 50%;  /* Đặt tooltip căn giữa */
+            margin-left: -110px;  /* Để căn giữa chính xác */
+            opacity: 0;  /* Ẩn tooltip khi không hover */
+            transition: opacity 0.3s;  /* Hiệu ứng mờ dần khi hiển thị tooltip */
+}
+
+        /* Hiển thị tooltip khi hover */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;  /* Hiển thị tooltip */
+            opacity: 1;  /* Đặt độ mờ về 1 khi hiển thị */
+}	
+        footer a {
+            font-size: 14px; /* Đặt kích thước chữ cho liên kết */
+            font-weight: bold; /* Đậm chữ */
+            display: inline-flex;
+            align-items: center; /* Căn giữa hình ảnh và văn bản theo chiều dọc */
+            gap: 5px; /* Khoảng cách giữa văn bản và icon */
+}
+    
+        footer a img {
+            width: 18px; /* Đảm bảo kích thước icon */
+            height: 18px; /* Đảm bảo kích thước icon */
+            vertical-align: middle; /* Căn chỉnh icon với văn bản */
+}
