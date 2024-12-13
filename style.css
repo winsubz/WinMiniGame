@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: linear-gradient(to right, blue, purple); /* Đổ màu từ xanh dương qua tím */
+    background-color: #000000
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -36,8 +36,9 @@ body{
     grid-column-end: 3;
 }
 
-.turn-container .turn-box{
-    border: 3px solid #000;
+.turn-container .turn-box {
+    border: 15px solid transparent; /* Viền dày hơn, 15px trong suốt để áp dụng gradient */
+    border-image: linear-gradient(to right, blue, purple) 1; /* Viền gradient từ xanh dương qua tím */
     font-size: 1.6rem;
     font-weight: 700;
 }
@@ -56,15 +57,18 @@ body{
     z-index: -1;
 }
 
-.main-grid{
+.main-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 250px;
     width: 250px;
     margin: 30px auto;
-    border: 2px solid #000;
+    border: 15px solid transparent; /* Viền đậm hơn, 15px trong suốt để áp dụng gradient */
+    border-image: linear-gradient(to right, blue, purple) 1; /* Viền gradient từ xanh dương qua tím */
 }
+
+
 
 .box{
     cursor: pointer;
